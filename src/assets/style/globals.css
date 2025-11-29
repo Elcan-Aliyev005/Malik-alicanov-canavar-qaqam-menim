@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+
+.mantine-Input-section.mantine-Select-section{
+    display: none;
+}
+
+.mantine-Select-option svg{
+    display: none;
+}
