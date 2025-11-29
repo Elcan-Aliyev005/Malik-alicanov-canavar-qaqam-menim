@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 
 function MoodboardSection() {
     return (
@@ -10,13 +9,12 @@ function MoodboardSection() {
                 <p className={'text-[14px] mb-8 text-[#ffffffad] leading-6'}> Vaxtınızı xərcləmədən ən uyğun xidməti seçin
                     – mövcud variantları müqayisə edin
                     və sürətlə peşəkarlarla əlaqə qurun.</p>
-
-                <Link className={'inline-block text-[16px] lg:text-lg lg:leading-7  leading-6 font-medium'} to={'/'}>
+                <a  href="#how-does-it-work" className="inline-block text-[16px] lg:text-lg lg:leading-7  leading-6 font-medium">
                    <div className={'flex items-center pr-1 border-b border-white gap-3'}>
                        İndi başlayın
                        <img src={'/icons/white-right-arrow.svg'} alt={'white-right-arrow'}/>
                    </div>
-                </Link>
+                </a>
             </div>
             <div className={'hidden w-[585px] h-full  lg:flex items-end'}>
                 <img  src={"/img/app.svg"}/>

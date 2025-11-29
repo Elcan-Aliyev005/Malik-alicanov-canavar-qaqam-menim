@@ -6,7 +6,7 @@ import {servicesData} from "../const/index.const.ts";
 function SixthSection() {
     return (
         <section
-            id={'how-does-it-work]'}
+            id={'how-does-it-work'}
             className={"py-[25px]"}>
             <div className={'section-header text-center'}>
                 <TitleBadge title={'Tətbiqdəki rolunuzu müəyyən edin'}/>
