@@ -7,7 +7,7 @@ function ReachTheRightCustomerSection() {
     return (
         <section
             id={'reach-the-right-customer-section'}
-            className={"py-[25px]"}>
+            className={"pb-[15px] lg:pb-[75px] pt-[25px]"}>
             <div className={'section-header text-center'}>
                 <TitleBadge title={'Biznes necə işləyir?'}/>
                 <SectionTitle className={'mt-3 px-3'}>

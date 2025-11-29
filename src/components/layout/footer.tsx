@@ -32,7 +32,7 @@ function Footer() {
                             us</h3>
                         <ul className="space-y-3 text-xs  lg:text-[16px] lg:leading-6 leading-[16px]">
                             <li className={'hover:text-[#0F820F] cursor-pointer'}>+994 (55) 111 11 11</li>
-                            <li className={'hover:text-[#0F820F] cursor-pointer'}>mnagiyeva21@gmail.com</li>
+                            <li className={'hover:text-[#0F820F] cursor-pointer'}>heplly@gmail.com</li>
                         </ul>
                     </div>
 

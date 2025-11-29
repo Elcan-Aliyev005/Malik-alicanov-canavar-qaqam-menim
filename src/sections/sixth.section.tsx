@@ -6,8 +6,8 @@ import {servicesData} from "../const/index.const.ts";
 function SixthSection() {
     return (
         <section
-            id={'how-does-it-work]'}
-            className={"py-[25px]"}>
+            id={'how-does-it-work'}
+            className={" pb-[15px] lg:pb-[75px] pt-[25px]"}>
             <div className={'section-header text-center'}>
                 <TitleBadge title={'Tətbiqdəki rolunuzu müəyyən edin'}/>
                 <SectionTitle className={'mt-3 px-3'}>
@@ -20,9 +20,9 @@ function SixthSection() {
             <div className={"how-does-it-work-cards mt-[24px] lg:mt-[36px] grid grid-cols-1 items-start  md:grid-cols-2   gap-5"}>
                 {servicesData.map((service)=>{
                     return(
-                        <div className={'bg-[#F9F9F9] p-4 flex flex-col justify-between group rounded-[16px] border border-transparent transition-all duration-500 hover:border-[#108910] hover:bg-[#1089100A] min-h-[196px] lg:min-h-[256px]'}>
+                        <div className={'bg-[#F9F9F9] p-4 flex flex-col justify-between group rounded-[16px] border border-transparent transition-all duration-1000 hover:border-[#108910] hover:bg-[#1089100A] min-h-[196px] lg:min-h-[256px]'}>
                             <div className={'flex justify-end'}>
-                                <div className={'icon-box group-hover:rotate-[360deg]  bg-[#212121] grid place-items-center transition-all duration-500  group-hover:bg-[#108910] w-12 h-12 rounded-full'}>
+                                <div className={'icon-box group-hover:rotate-[360deg]  bg-[#212121] grid place-items-center transition-all duration-750  group-hover:bg-[#108910] w-12 h-12 rounded-full'}>
                                     <img src={'/icons/white-up-right.svg'} alt={'up-right-arrow'}/>
                                 </div>
                             </div>

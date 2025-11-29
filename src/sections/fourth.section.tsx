@@ -6,8 +6,8 @@ import FourthSectionStepCard from "../components/ui/cards/fourth-section-step-ca
 function FourthSection() {
     return (
         <section
-            id={'third-section'}
-            className={"py-[25px] text-center lg:text-left grid grid-cols-1 lg:grid-cols-2 gap-6  lg:gap-20 "}>
+            id={'fourth-section'}
+            className={"pb-[15px] lg:pb-[80px] pt-[25px] text-center lg:text-left grid grid-cols-1 lg:grid-cols-2 gap-6  lg:gap-20 "}>
 
             <div className={'rounded-[16px] flex justify-center lg:block lg:text-left  overflow-hidden'}>
                 <img className={'sm:hidden rounded-[16px]'} src={'/img/girl.svg'} alt={'girl'}/>

@@ -5,7 +5,7 @@ function ThirdSection() {
     return (
         <section
             id={'third-section'}
-            className={"py-[25px] lg:flex lg:items-center lg:justify-between lg:gap-16"}>
+            className={" pb-[15px]  pt-[25px]  lg:pb-[75px]  lg:pt-[95px] lg:flex lg:items-center lg:justify-between lg:gap-16"}>
             <div className={'section-header md:max-w-2/3 lg:max-w-[464px]'}>
                 <SectionTitle className={'mb-4'}>
                     Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet

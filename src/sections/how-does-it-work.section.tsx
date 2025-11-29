@@ -7,7 +7,7 @@ function HowDoesItWorkSection() {
     return (
         <section
             id={'how-does-it-work]'}
-            className={"py-[25px]"}>
+            className={"pb-[39px] pt-[11px] lg:py-[25px]"}>
             <div className={'section-header text-center'}>
                 <TitleBadge title={'Necə işləyir?'}/>
                 <SectionTitle className={'mt-3 px-3'}>
