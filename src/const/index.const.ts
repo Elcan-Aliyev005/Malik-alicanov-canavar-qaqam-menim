@@ -2,23 +2,23 @@ import type {IMenuItems} from "../types";
 
 export const menuList: IMenuItems[] = [
     {
-        path: "/",
+        path: "#helplly",
         name: "Helplly"
     },
     {
-        path: "/business",
+        path: "#business",
         name: "Biznes"
     },
     {
-        path: "/why",
+        path: "#why-us",
         name: "Niyə biz"
     },
     {
-        path: "/faq",
+        path: "#faq",
         name: "Faq"
     },
     {
-        path: "/contact",
+        path: "#contact",
         name: "Bizimlə əlaqə"
     }
 ];

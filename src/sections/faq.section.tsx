@@ -3,7 +3,7 @@ import SectionTitle from "../components/ui/text/section-title.text.tsx";
 
 function FaqSection() {
     return (
-        <section id={'faq-section'} className={"pb-[25px] lg:pb-[100px] pt-[25px]"}>
+        <section id={'faq'} className={"pb-[25px] scroll-mt-[120px] lg:pb-[100px] pt-[25px]"}>
             <SectionTitle className={'mb-8'}>
                 Tez-Tez Verilən Suallar
             </SectionTitle>

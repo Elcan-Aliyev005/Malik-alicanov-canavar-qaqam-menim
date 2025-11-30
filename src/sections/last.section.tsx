@@ -1,8 +1,8 @@
 
 function LastSection() {
     return (
-        <div>
-            <div className={' text-center'}>
+        <section>
+            <div className={'text-center'}>
                 <img className={'inline-block lg:hidden'} src={'/img/logo_bg-mobile.svg'} alt={"logo-bg"}/>
                 <img className={'hidden lg:inline-block'} src={'/img/logo_bg.svg'} alt={"logo-bg"}/>
             </div>
@@ -27,7 +27,7 @@ function LastSection() {
                     <img className={'hidden lg:inline-block'} src={'/img/girl-phone2.png'} alt={"logo-bg"}/>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

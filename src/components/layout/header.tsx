@@ -1,8 +1,7 @@
 import {Button, Select} from "@mantine/core"
-import {Link, NavLink} from "react-router-dom"
+import {Link} from "react-router-dom"
 import {MobileSidebar} from "../ui/sidebars/mobile.sidebar"
 import {menuList} from "../../const/index.const.ts";
-import type {IMenuItems} from "../../types";
 
 
 function Header() {
@@ -17,16 +16,23 @@ function Header() {
                         <img src="/img/mobile-logo.svg" alt="logo"/>
                     </Link>
                     <ul className="hidden lg:flex gap-10">
-                        {menuList.map((link: IMenuItems, index: number) => {
+                        {menuList.map((link, index) => {
+                            const isActive = window.location.pathname === link.path;
+
                             return (
                                 <li key={index}>
-                                    <NavLink
-                                        className={({isActive}) =>
-                                            isActive ? "text-[#0F820F] font-semibold" : "text-black hover:text-[#0F820F] transition-colors"}
-                                        to={link.path}>
+                                    <a
+                                        href={link.path}
+                                        className={
+                                            isActive
+                                                ? "text-[#0F820F] font-semibold"
+                                                : "text-black hover:text-[#0F820F] transition-colors"
+                                        }
+                                    >
                                         {link.name}
-                                    </NavLink>
-                                </li>)
+                                    </a>
+                                </li>
+                            );
                         })}
                     </ul>
                 </nav>
@@ -50,7 +56,6 @@ function Header() {
                                 border: "1px solid #212121",
                             }
                         }}
-
                     />
 
                 </div>

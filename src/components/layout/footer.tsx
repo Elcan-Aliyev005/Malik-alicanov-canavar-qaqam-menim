@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="mt-15 lg:container lg:mx-auto  bg-[#F9F9F9]">
+        <footer id={'contact'} className="mt-15 scroll-mt-[120px] lg:container lg:mx-auto  bg-[#F9F9F9]">
             <div className={"lg:flex lg:justify-between "}>
                 <nav className="py-6 lg:px-6 lg:py-9 text-center lg:text-left ">
                     <Link className="inline-block" to="/">
@@ -19,10 +19,18 @@ function Footer() {
                     <div className={' lg:text-left'}>
                         <h3 className="font-semibold text-[13px] leading-[20px]   lg:text-[16px] lg:leading-6 text-[#404145] mb-2">Company</h3>
                         <ul className="space-y-3 text-xs  lg:text-[16px] lg:leading-6 leading-[16px]">
-                            <li className={'hover:text-[#0F820F] cursor-pointer'}>Haqqımızda</li>
-                            <li className={'hover:text-[#0F820F] cursor-pointer'}>İstifadəçi şərtləri</li>
+                            <li className={'hover:text-[#0F820F] cursor-pointer'}>
+                                <a href={'#why-us'}>Haqqımızda</a>
+                            </li>
+                            <li className={'hover:text-[#0F820F] cursor-pointer'}>
+                                <Link to={'/terms-of-service'}>
+                                    İstifadəçi şərtləri
+                                </Link>
+                            </li>
                             <li className={'hover:text-[#0F820F] cursor-pointer'}>Bizimlə əlaqə</li>
-                            <li className={'hover:text-[#0F820F] cursor-pointer'}>Tez-tez verilən suallar</li>
+                            <li className={'hover:text-[#0F820F] cursor-pointer'}>
+                                <a href={'#faq'}>Tez-tez verilən suallar</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -44,8 +52,8 @@ function Footer() {
                                 <Link to={'/privacy-and-policy'}>Privacy Policy</Link>
                             </li>
                             <li className={'hover:text-[#0F820F] cursor-pointer'}>
-                            <Link to={'/privacy-terms'}>Terms of Service</Link>
-                        </li>
+                                <Link to={'/terms-of-service'}>Terms of Service</Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -64,7 +72,8 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className={"hidden text-sm leading-6 border-t border-[#EBEBEB] text-[#00000061] lg:block pt-6 pb-8 px-6"}>
+            <div
+                className={"hidden text-sm leading-6 border-t border-[#EBEBEB] text-[#00000061] lg:block pt-6 pb-8 px-6"}>
                 <p>© 2025 Lorem Ipsum is simply </p>
             </div>
         </footer>

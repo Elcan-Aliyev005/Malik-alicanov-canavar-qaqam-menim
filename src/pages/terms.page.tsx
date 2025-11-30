@@ -21,7 +21,7 @@ function TermsPage() {
           </div>
         </Link>
 
-        <h2 className={"text-[28px] md:text-[32px] mb-1 font-semibold leading-10"}> Privacy Terms page</h2>
+        <h2 className={"text-[28px] md:text-[32px] mb-1 font-semibold leading-10"}>Terms of Service</h2>
         <p className={'leading-4 text-xs text-[#21212161]'}>Last updated: November  2025</p>
       </div>
 

@@ -9,7 +9,7 @@ export const router = createBrowserRouter(
         <Route path="/" element={<MainLayout/>}>
             <Route index element={<HomePage/>}/>
             <Route path="/privacy-and-policy" element={<PrivacyPage/>}/>
-            <Route path="/privacy-terms" element={<TermsPage/>}/>
+            <Route path="/terms-of-service" element={<TermsPage/>}/>
             <Route path={'*'} element={<HomePage/>}/>
         </Route>
     )
