@@ -1,6 +1,7 @@
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function Footer() {
+    const navigate= useNavigate()
     return (
         <footer id={'contact'} className="mt-15 scroll-mt-[120px]    bg-[#F9F9F9]">
             <div className={"lg:flex lg:justify-between lg:container lg:mx-auto "}>
@@ -20,7 +21,7 @@ function Footer() {
                         <h3 className="font-semibold text-[13px] leading-[20px]   lg:text-[16px] lg:leading-6 text-[#404145] mb-2">Company</h3>
                         <ul className="space-y-3 text-xs  lg:text-[16px] lg:leading-6 leading-[16px]">
                             <li className={'hover:text-[#0F820F] cursor-pointer'}>
-                                <a href={'#why-us'}>Haqqımızda</a>
+                                <a  onClick={()=>{navigate(`/#why-us}`)}} href={'#why-us'}>Haqqımızda</a>
                             </li>
                             <li className={'hover:text-[#0F820F] cursor-pointer'}>
                                 <Link to={'/terms-of-service'}>
@@ -29,7 +30,7 @@ function Footer() {
                             </li>
                             <li className={'hover:text-[#0F820F] cursor-pointer'}>Bizimlə əlaqə</li>
                             <li className={'hover:text-[#0F820F] cursor-pointer'}>
-                                <a href={'#faq'}>Tez-tez verilən suallar</a>
+                                <a  onClick={()=>{navigate(`/#faq`)}} href={'#faq'}>Tez-tez verilən suallar</a>
                             </li>
                         </ul>
                     </div>

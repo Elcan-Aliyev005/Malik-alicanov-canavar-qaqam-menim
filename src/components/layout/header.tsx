@@ -1,10 +1,12 @@
 import {Button, Select} from "@mantine/core"
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import {MobileSidebar} from "../ui/sidebars/mobile.sidebar"
 import {menuList} from "../../const/index.const.ts";
 
 
 function Header() {
+
+    const navigate = useNavigate()
 
     return (
 
@@ -22,6 +24,7 @@ function Header() {
                             return (
                                 <li key={index}>
                                     <a
+                                        onClick={()=>{navigate(`/${link.path}`)}}
                                         href={link.path}
                                         className={
                                             isActive
