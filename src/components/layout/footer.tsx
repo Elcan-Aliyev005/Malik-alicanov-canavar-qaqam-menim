@@ -2,8 +2,8 @@ import {Link} from "react-router-dom";
 
 function Footer() {
     return (
-        <footer id={'contact'} className="mt-15 scroll-mt-[120px] lg:container lg:mx-auto  bg-[#F9F9F9]">
-            <div className={"lg:flex lg:justify-between "}>
+        <footer id={'contact'} className="mt-15 scroll-mt-[120px]    bg-[#F9F9F9]">
+            <div className={"lg:flex lg:justify-between lg:container lg:mx-auto "}>
                 <nav className="py-6 lg:px-6 lg:py-9 text-center lg:text-left ">
                     <Link className="inline-block" to="/">
                         <img src="/img/mobile-logo.svg" alt="logo"/>
@@ -73,7 +73,7 @@ function Footer() {
                 </div>
             </div>
             <div
-                className={"hidden text-sm leading-6 border-t border-[#EBEBEB] text-[#00000061] lg:block pt-6 pb-8 px-6"}>
+                className={"hidden text-sm leading-6 lg:container lg:mx-auto border-t border-[#EBEBEB] text-[#00000061] lg:block pt-6 pb-8 px-6"}>
                 <p>© 2025 Lorem Ipsum is simply </p>
             </div>
         </footer>
